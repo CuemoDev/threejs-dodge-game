@@ -2,9 +2,33 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: sans-serif;
-  text-align: center;
-  background-color: #111;
-  color: #fff;
+  background: #111;
+  color: white;
+}
+
+#menu, .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+
+#menu {
+  display: block;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 #game {
